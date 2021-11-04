@@ -4,15 +4,23 @@ author: Brian Crilly
 date: 03 November 2021
 autosize: true
 
+
 Introduction
 ========================================================
+
 This presentation is part of the Developing Data Products final project
 
 - It is created using R Studio
 - It explains the Shiny application created as part of the project
 
+- The app is located here:
+    + [https://cartan.shinyapps.io/FindMean/](https://cartan.shinyapps.io/FindMean/)
+- And the source code can be found here:
+    + [https://github.com/cartan68/DDP_FinalProject](https://github.com/cartan68/DDP_FinalProject)
+
 Shiny App Motivation
 ========================================================
+
 The mean is a commonly used measure of central tendency in statistical analysis
 
 - The idea is to create a Shiny App that allows users to explore the concept of the mean
@@ -21,6 +29,7 @@ The mean is a commonly used measure of central tendency in statistical analysis
 
 How the Shiny App Works
 ========================================================
+
 A random distribution is presented to the user
 
 - The user can change the number of sample points in the distribution using a slider control
@@ -29,10 +38,17 @@ A random distribution is presented to the user
 - The user can reset the graph and try again by hitting the "Try Again" button
 
 
-Where to Find the Shiny App
+Example Distribution Graph
 ========================================================
-The app is located here:
 
-- [https://cartan.shinyapps.io/FindMean/](https://cartan.shinyapps.io/FindMean/)
+Where is the Mean?  
+```{r, echo = FALSE}
+library(ggplot2)
 
-And the source code can be found here:
+plotPoints <- data.frame(data = round(runif(20, 1, 10), 0))
+
+ggplot(plotPoints) +
+    geom_dotplot(aes(x = data), method = "histodot", binwidth = 1, dotsize = 0.7) +
+    scale_y_continuous(NULL, breaks = NULL) +
+    labs( x = "Sample Values")
+```
