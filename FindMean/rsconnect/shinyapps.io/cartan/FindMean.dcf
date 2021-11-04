@@ -1,0 +1,13 @@
+name: FindMean
+title: FindMean
+username:
+account: cartan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5040280
+bundleId: 5210514
+url: https://cartan.shinyapps.io/FindMean/
+when: 1635989038.66098
+lastSyncTime: 1635989038.66105
+asMultiple: FALSE
+asStatic: FALSE

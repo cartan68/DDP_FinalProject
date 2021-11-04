@@ -1,0 +1,38 @@
+Developing Data Products Project Presentation
+========================================================
+author: Brian Crilly
+date: 03 November 2021
+autosize: true
+
+Introduction
+========================================================
+This presentation is part of the Developing Data Products final project
+
+- It is created using R Studio
+- It explains the Shiny application created as part of the project
+
+Shiny App Motivation
+========================================================
+The mean is a commonly used measure of central tendency in statistical analysis
+
+- The idea is to create a Shiny App that allows users to explore the concept of the mean
+- Without calculations, users can learn to visualize and approximate the location of the mean
+
+
+How the Shiny App Works
+========================================================
+A random distribution is presented to the user
+
+- The user can change the number of sample points in the distribution using a slider control
+- The user can guess the location of the mean by clicking on the graph to drop a marker
+- The user can compare the guess with the actual mean by selecting the "Check Answer" button
+- The user can reset the graph and try again by hitting the "Try Again" button
+
+
+Where to Find the Shiny App
+========================================================
+The app is located here:
+
+- [https://cartan.shinyapps.io/FindMean/](https://cartan.shinyapps.io/FindMean/)
+
+And the source code can be found here:
